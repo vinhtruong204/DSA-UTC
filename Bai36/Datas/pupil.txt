@@ -1,0 +1,34 @@
+4
+
+221230999
+Dinh Ngoc The
+Nam
+19
+7
+9
+8
+
+221230799
+Tran Hai Dang
+Nam
+19
+8
+9
+9
+
+221230974
+Luong Van Son
+Nam
+19
+9
+8.5
+9
+
+221230823
+Nguyen Phan Hai
+Nam
+19
+7
+8
+10
+

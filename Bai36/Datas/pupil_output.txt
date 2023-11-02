@@ -1,0 +1,4 @@
+ 221230799	|            Tran Hai Dang	|       Nam	|   19	|  8.0	|  9.0	|  9.0	|  8.7	|      Gioi	
+ 221230823	|          Nguyen Phan Hai	|       Nam	|   19	|  7.0	|  8.0	| 10.0	|  8.3	|      Gioi	
+ 221230974	|            Luong Van Son	|       Nam	|   19	|  9.0	|  8.5	|  9.0	|  8.8	|      Gioi	
+ 221230999	|            Dinh Ngoc The	|       Nam	|   19	|  7.0	|  9.0	|  8.0	|  8.0	|      Gioi	
