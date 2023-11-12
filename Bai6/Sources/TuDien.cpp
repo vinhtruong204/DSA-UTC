@@ -33,7 +33,14 @@ void TuDien::themTuMoi(string key, string elem)
 
 void TuDien::xoaMotTu(string key)
 {
-    b.remove(key);
+    if (b.search(key))
+    {
+        b.remove(key);
+    }
+    else
+    {
+        cout << "Khong tim thay tu can xoa!\n";
+    }
 }
 
 void TuDien::capNhatNghia(string key)
