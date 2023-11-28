@@ -148,30 +148,6 @@ MyVector<T> &MyVector<T>::operator=(MyVector<T> a)
 }
 
 template <class T>
-T *MyVector<T>::begin()
-{
-    return this->arr;
-}
-
-template <class T>
-T *MyVector<T>::end()
-{
-    return this->arr + this->number;
-}
-
-template <class T>
-T *MyVector<T>::rbegin()
-{
-    return this->arr + this->number;
-}
-
-template <class T>
-T *MyVector<T>::rend()
-{
-    return this->arr;
-}
-
-template <class T>
 void MyVector<T>::erase(T *it)
 {
     if (number == 0)
@@ -182,4 +158,29 @@ void MyVector<T>::erase(T *it)
     }
     number--;
 }
+
+template <class T>
+typename MyVector<T>::iterator MyVector<T>::begin()
+{
+    return this->arr;
+}
+
+template <class T>
+typename MyVector<T>::iterator MyVector<T>::end()
+{
+    return this->arr + this->number;
+}
+
+template <class T>
+typename MyVector<T>::reverse_iterator MyVector<T>::rbegin()
+{
+    return this->arr + (this->number - 1);
+}
+
+template <class T>
+typename MyVector<T>::reverse_iterator MyVector<T>::rend()
+{
+    return this->arr - 1;
+}
+
 
