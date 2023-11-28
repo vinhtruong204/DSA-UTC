@@ -55,13 +55,16 @@ public:
     // Nap chong toan tu bang
     MyVector &operator=(MyVector<T> a);
 
+    typedef T* iterator;
+    typedef T* reverse_iterator;
+
     // Tra ve con tro den vi tri dau cua vector
-    T* begin();
-    T* end();
+    iterator begin();
+    iterator end();
 
     // Reverse iterator
-    T* rbegin();
-    T* rend();
+    reverse_iterator rbegin();
+    reverse_iterator rend();
 };
 
 #endif
