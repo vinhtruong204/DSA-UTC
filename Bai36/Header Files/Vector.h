@@ -58,7 +58,7 @@ public:
     typedef T* iterator;
     typedef T* reverse_iterator;
 
-    // Tra ve con tro den vi tri dau cua vector
+    // Iterator
     iterator begin();
     iterator end();
 
