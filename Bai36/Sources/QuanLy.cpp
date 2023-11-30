@@ -18,6 +18,7 @@ void QuanLy::docDanhSachHocSinh()
         cout << "Khong the mo file!\n";
         return;
     }
+    int n;
     file >> n;
     cin.ignore();
     for (int i = 0; i < n; i++)
@@ -47,12 +48,18 @@ void QuanLy::capNhatThongTin(int maHocSinh)
 
 void QuanLy::xoaHocSinh(int maHocSinh)
 {
-    for (int i = 0; i < n; i++)
+    bool check = false;
+    for (int i = 0; i < ds.size(); i++)
     {
         if (ds[i].getMaHocsinh() == maHocSinh)
         {
             ds.erase(ds.begin() + i);
+            check = true;
         }
+    }
+    if (!check)
+    {
+        cout << "Khong tim thay hoc sinh co ma: " << maHocSinh << "\n";
     }
 }
 
@@ -86,9 +93,9 @@ void QuanLy::timKiem(string tenHocSinh)
 
 void QuanLy::sapXepTheoDiemTb()
 {
-    for (int i = 0; i < n - 1; i++)
+    for (int i = 0; i < ds.size() - 1; i++)
     {
-        for (int j = i + 1; j < n; j++)
+        for (int j = i + 1; j < ds.size(); j++)
         {
             if (ds[i].getDiemTb() < ds[j].getDiemTb())
             {
@@ -102,9 +109,9 @@ void QuanLy::sapXepTheoDiemTb()
 
 void QuanLy::sapXepTheoTen()
 {
-    for (int i = 0; i < n - 1; i++)
+    for (int i = 0; i < ds.size() - 1; i++)
     {
-        for (int j = i + 1; j < n; j++)
+        for (int j = i + 1; j < ds.size(); j++)
         {
             if (ds[i].getTen() > ds[j].getTen())
             {
