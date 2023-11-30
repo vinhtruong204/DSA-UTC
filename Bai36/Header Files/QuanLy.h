@@ -10,7 +10,6 @@ class QuanLy
 {
 private:
     MyVector<HocSinh> ds;
-    int n;
 public:
     void docDanhSachHocSinh();
     void themMotHocSinh(HocSinh a);
